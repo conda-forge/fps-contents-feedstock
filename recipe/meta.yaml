@@ -24,6 +24,7 @@ requirements:
     - fps >=0.0.8,<1
     - fps-auth-base <1
     - anyio >=3,<4
+    - watchfiles >=0.16.1,<1
 
 test:
   imports:

@@ -1,5 +1,5 @@
 {% set name = "fps-contents" %}
-{% set version = "0.0.44" %}
+{% set version = "0.0.46" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_contents-{{ version }}.tar.gz
-  sha256: 870673dd5a4121855c558237d882b89f96c8517d27e113792fc04a5386290611
+  sha256: d5af741c0de71a145ec9418a2d9d667611782bcad37e2579e17290f1d4199718
 
 build:
   noarch: python
@@ -25,6 +25,8 @@ requirements:
     - fps-auth-base <1
     - anyio >=3,<4
     - watchfiles >=0.16.1,<1
+    - aiosqlite >=0.17.0,<1
+    - anyio>=3.6.2,<4
 
 test:
   imports:

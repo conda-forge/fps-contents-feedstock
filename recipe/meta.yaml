@@ -23,10 +23,9 @@ requirements:
     - python >=3.7
     - fps >=0.0.8,<1
     - fps-auth-base <1
-    - anyio >=3,<4
     - watchfiles >=0.16.1,<1
     - aiosqlite >=0.17.0,<1
-    - anyio>=3.6.2,<4
+    - anyio >=3.6.2,<4
 
 test:
   imports:

@@ -1,5 +1,5 @@
 {% set name = "fps-contents" %}
-{% set version = "0.0.49" %}
+{% set version = "0.0.50" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_contents-{{ version }}.tar.gz
-  sha256: 4e2e87846c0c79786f6c4850dedd146679eaeb3749e5f3795ea6f19ef507aa33
+  sha256: 3937d20d4ff1a5a4b72504f5a7a0ab5df6381073e023967bbff84c6cea2f6abc
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - hatchling
   run:
-    - python >=3.7
+    - python >=3.8
     - fps >=0.0.8,<1
     - fps-auth-base <1
     - watchfiles >=0.16.1,<1

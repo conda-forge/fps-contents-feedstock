@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_contents-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_contents-{{ version }}.tar.gz
   sha256: b2e0db45fed6190cb8600a9a8d63404a5127833d8449d462d9fe45146bf2ab75
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jupyverse-api >=0.1.4,<1
     - watchfiles >=0.18.1,<1
     - aiosqlite >=0.17.0,<1
     - anyio >=3.6.2,<5
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fps_contents
 

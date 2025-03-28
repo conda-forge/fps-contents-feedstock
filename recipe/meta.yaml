@@ -1,5 +1,5 @@
 {% set name = "fps-contents" %}
-{% set version = "0.7.4" %}
+{% set version = "0.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_contents-{{ version }}.tar.gz
-  sha256: 39cf98a206efe928fabbeed8cb88603666bd63d29fab01d4ac96dee630694c3f
+  sha256: 718a4bee3a46db319a66dc2ae47f8a2ea45b3a3a57322f3e94b983ee0642388f
 
 build:
   noarch: python

@@ -1,5 +1,5 @@
 {% set name = "fps-contents" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_contents-{{ version }}.tar.gz
-  sha256: 4845fdf7014004209bba93c0e67267452b74c70658dd16bf95f7c840d744cfe4
+  sha256: 3a3e0e1df58cf4ef6e28d84e43e1ab91364576db8dd06013c8316406f7250ff1
 
 build:
   noarch: python
@@ -21,12 +21,15 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.11.0,<0.12.0
+    - jupyverse-api >=0.12.0,<0.13.0
     - anyio >=3.6.2,<5
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
+  commands:
+    - pip check
   imports:
     - fps_contents
 

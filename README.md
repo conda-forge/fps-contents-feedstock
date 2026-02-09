@@ -3,13 +3,11 @@ About fps-contents-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-contents-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/jupyter-server/jupyverse/plugins/contents
+Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/contents
 
 Package license: BSD-3-Clause
 
-Summary: An FPS plugin for the contents API
-
-Development: https://github.com/jupyter-server/jupyverse/plugins/contents
+Summary: An FPS plugin for the contents API.
 
 Current build status
 ====================

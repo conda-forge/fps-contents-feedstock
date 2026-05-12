@@ -29,7 +29,7 @@ requirements:
     - fps
     - jupyverse-api >=0.15.0,<0.16.0
     - jupyverse-auth >=0.2.0,<0.3.0
-    - jupyverse-contents >=0.1.2,<0.2.0
+    - jupyverse-contents >=0.1.3,<0.2.0
     - starlette
     - structlog
 

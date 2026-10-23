@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.4"
+  version: "0.11.5"
 
 package:
   name: fps-contents
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-contents/fps_contents-${{ version }}.tar.gz
-    sha256: 8da6d8baa2752aef0bcaae773fff43e822cd9a97deab3953088338735643442e
+    sha256: e673266cf31bb04b05cc85b972928f94f63947b187f983983584a9e4cae0af61
 
 build:
   noarch: python
